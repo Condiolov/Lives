@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="projeto de assistente de voz ia.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.27433372"
+     inkscape:cx="1206.5597"
+     inkscape:cy="298.90602"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#00ffff;stroke-width:1.265;paint-order:fill markers stroke"
+       id="rect846"
+       width="174.52975"
+       height="65.341011"
+       x="15.060396"
+       y="42.818729"
+       ry="1.0675753" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.1276px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.45437"
+       x="47.482414"
+       y="69.032524"
+       id="text2390"
+       transform="scale(0.78847961,1.2682636)"><tspan
+         sodipodi:role="line"
+         id="tspan2388"
+         style="stroke-width:0.45437"
+         x="47.482414"
+         y="69.032524">PC BOOOOM</tspan></text>
+    <rect
+       style="fill:#00ffff;stroke-width:1.265;paint-order:fill markers stroke"
+       id="rect5736"
+       width="169.89839"
+       height="47.862698"
+       x="9.1675377"
+       y="263.55975"
+       ry="1.0675753" />
+    <text
+       xml:space="preserve"
+       style="font-size:26.1276px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.45437"
+       x="18.588232"
+       y="226.83153"
+       id="text8878"
+       transform="scale(0.78847961,1.2682636)"><tspan
+         sodipodi:role="line"
+         id="tspan8876"
+         style="stroke-width:0.45437"
+         x="18.588232"
+         y="226.83153">ollama</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.2143px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="13.840721"
+       y="302.92581"
+       id="text16272"><tspan
+         sodipodi:role="line"
+         id="tspan16270"
+         style="stroke-width:0.264583"
+         x="13.840721"
+         y="302.92581">modelo: llama3.2</tspan></text>
+    <rect
+       style="fill:#00ff00;stroke-width:2.27656;paint-order:fill markers stroke"
+       id="rect18090"
+       width="272.30984"
+       height="165.18169"
+       x="252.5932"
+       y="54.502495"
+       ry="2.8918455" />
+    <text
+       xml:space="preserve"
+       style="font-size:27.7529px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.482635"
+       x="430.35361"
+       y="96.875053"
+       id="text19700"
+       transform="scale(0.90383487,1.1063968)"><tspan
+         sodipodi:role="line"
+         id="tspan19698"
+         style="text-align:center;text-anchor:middle;stroke-width:0.482635"
+         x="430.35361"
+         y="96.875053">1- fala pra texto</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.482635"
+         x="430.35361"
+         y="131.56618"
+         id="tspan19702">2- texto pro ollama</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.482635"
+         x="430.35361"
+         y="166.25731"
+         id="tspan19704">3- ollama pra voz</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:center;text-anchor:middle;stroke-width:0.482635"
+         x="430.35361"
+         y="200.94843"
+         id="tspan19706" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.2143px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="280.16589"
+       y="88.36972"
+       id="text30660"><tspan
+         sodipodi:role="line"
+         id="tspan30658"
+         style="stroke-width:0.264583"
+         x="280.16589"
+         y="88.36972" /></text>
+    <rect
+       style="fill:#00ff00;stroke-width:1.265;paint-order:fill markers stroke"
+       id="rect66536"
+       width="173.70375"
+       height="59.404476"
+       x="9.796526"
+       y="120.71302"
+       ry="2.8918428" />
+    <rect
+       style="fill:#00ff00;stroke-width:2.329;paint-order:fill markers stroke"
+       id="rect66538"
+       width="591.73279"
+       height="73.808228"
+       x="21.506178"
+       y="332.54068"
+       ry="2.8918428" />
+    <text
+       xml:space="preserve"
+       style="font-size:24.8497px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.432146"
+       x="39.352596"
+       y="329.00888"
+       id="text72240-1"
+       transform="scale(0.91671515,1.0908514)"><tspan
+         sodipodi:role="line"
+         id="tspan72238-8"
+         style="line-height:0.55;stroke-width:0.432146"
+         x="39.352596"
+         y="329.00888">tts (tts_models/multilingual/multi-dataset/xtts_v2)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.8497px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.432146"
+       x="27.521246"
+       y="138.37798"
+       id="text72240"
+       transform="scale(0.91671515,1.0908514)"><tspan
+         sodipodi:role="line"
+         id="tspan72238"
+         style="stroke-width:0.432146"
+         x="27.521246"
+         y="138.37798">arecord</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.2143px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="25.31624"
+       y="167.07826"
+       id="text78190"><tspan
+         sodipodi:role="line"
+         id="tspan78188"
+         style="stroke-width:0.264583"
+         x="25.31624"
+         y="167.07826">captura de audio</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.2143px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="41.622898"
+       y="385.80701"
+       id="text85003"><tspan
+         sodipodi:role="line"
+         id="tspan85001"
+         style="stroke-width:0.264583"
+         x="41.622898"
+         y="385.80701">ler o texto </tspan></text>
+    <rect
+       style="fill:#00ff00;stroke-width:1.265;paint-order:fill markers stroke"
+       id="rect90027"
+       width="168.8839"
+       height="50.08017"
+       x="8.4033928"
+       y="200.62764"
+       ry="2.8918428" />
+    <text
+       xml:space="preserve"
+       style="font-size:15.2143px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.264583"
+       x="27.597601"
+       y="212.11188"
+       id="text91673"><tspan
+         sodipodi:role="line"
+         id="tspan91671"
+         style="stroke-width:0.264583"
+         x="27.597601"
+         y="212.11188">Whisper</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="27.597601"
+         y="231.12975"
+         id="tspan91675">audio pra texto</tspan></text>
+  </g>
+</svg>
