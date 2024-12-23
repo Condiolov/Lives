@@ -66,7 +66,7 @@ for i in range(len(segments)):
     if i == 0:
         continue
 
-    xfade_effects = ["fade","","fadeblack","fadewhite","distance","wipeleft","wiperight","wipeup","wipedown","slideleft","slideright","slideup","slidedown","smoothleft","smoothright","smoothup","smoothdown","circlecrop","rectcrop","circleclose","circleopen","horzclose","horzopen","vertclose","vertopen","diagbl","diagbr","diagtl","diagtr","hlslice","hrslice","vuslice","vdslice","dissolve","pixelize","radial","hblur","wipetl","wipetr","wipebl","wipebr","zoomin","transition","for","xfade","fadegrays","squeezev","squeezeh","zoomin","hlwind","hrwind","vuwind","vdwind","coverleft","coverright","coverup","coverdown","revealleft","revealright","revealup","revealdown"]  # Exemplos de efeitos
+    xfade_effects = ["fade","fadeblack","fadewhite","distance","wipeleft","wiperight","wipeup","wipedown","slideleft","slideright","slideup","slidedown","smoothleft","smoothright","smoothup","smoothdown","circlecrop","rectcrop","circleclose","circleopen","horzclose","horzopen","vertclose","vertopen","diagbl","diagbr","diagtl","diagtr","hlslice","hrslice","vuslice","vdslice","dissolve","pixelize","radial","hblur","wipetl","wipetr","wipebl","wipebr","zoomin","transition","for","xfade","fadegrays","squeezev","squeezeh","zoomin","hlwind","hrwind","vuwind","vdwind","coverleft","coverright","coverup","coverdown","revealleft","revealright","revealup","revealdown"]  # Exemplos de efeitos
     effect = random.choice(xfade_effects)
 
     # Video graph: chain the xfade operator together
@@ -75,12 +75,12 @@ for i in range(len(segments)):
     video_fades += "[%s][%dv]xfade=%s:duration=%d:offset=%.5f[%s];" % (last_fade_output, i, effect, FADE_TIME, video_offset, next_fade_output)
     last_fade_output = next_fade_output
 
-   
+
     # Audio graph:
     next_audio_output = "a%d%d" % (i - 1, i)
     audio_fades += f"[{last_audio_output}][{i}:a]acrossfade=d=%d[{next_audio_output}];" % (FADE_TIME)
     last_audio_output = next_audio_output
- 
+
 video_fades += f"[{last_fade_output}]format=pix_fmts=yuv420p[final];"
 
 # Assemble the FFMPEG command arguments

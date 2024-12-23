@@ -1,0 +1,27 @@
+# https://github.com/Condiolov/Lives/tree/main/_CORTES
+# https://gl-transitions.com/gallery
+# https://github.com/transitive-bullshit/ffmpeg-gl-transition
+# https://github.com/scriptituk/xfade-easing
+
+# para os exemplos a baixo usar 5 videos de 30 segundos, dentro da pasta temp_cortes com nome parte_{1,2,3,4,5}.mp4
+
+# para corte de videos
+ffmpeg -i "$input_video" -ss 00:00 -to 00:30 -c copy -r 30 "$temp_dir/parte_$i.mp4"
+
+# Sem efeito so junta os videos da pasta $temp_dir
+files=$(ls "$temp_dir"/*.mp4 | sort | sed "s/^/file '/;s/$/'/" >file_list.txt)
+ffmpeg -f concat -safe 0 -i file_list.txt -c copy "$output_video" -y
+
+# Junta os videos apenas com fade simples!
+ffmpeg -i "./temp_cortes/parte_0.mp4" -i "./temp_cortes/parte_1.mp4" -i "./temp_cortes/parte_2.mp4" -i "./temp_cortes/parte_3.mp4" -i "./temp_cortes/parte_4.mp4" --filter_complex \
+    "[0:v]setpts=PTS-STARTPTS[v1]; \
+ [1:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(27/TB)[v2];
+[2:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(54/TB)[v3];
+[3:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(81/TB)[v4];
+[4:v]format=yuva420p,fade=in:st=0:d=3:alpha=1,setpts=PTS-STARTPTS+(108/TB)[v5];
+[v1][v2]overlay[12]; [12][v3]overlay[123]; [123][v4]overlay[1234]; [1234][v5]overlay,format=yuv420p[v]; \
+[0][1]acrossfade=d=3[a00];[a00][2]acrossfade=d=3[a12]; [a12][3]acrossfade=d=3[a123]; [a123][4]acrossfade=d=3[a];" \
+    -map [v] -map [a] -c:v hevc_nvenc -preset fast -r 30 output3.mp4 -y
+
+# Junta os videos com xfade aleatorio! https://trac.ffmpeg.org/wiki/Xfade
+ffmpeg -i ./temp_cortes/parte_0.mp4 -i ./temp_cortes/parte_1.mp4 -i ./temp_cortes/parte_2.mp4 -i ./temp_cortes/parte_3.mp4 -i ./temp_cortes/parte_4.mp4 -filter_complex "[0:v][1:v]xfade=wipeleft:duration=3:offset=27[v01];[v01][2:v]xfade=wipeleft:duration=3:offset=54[v12];[v12][3:v]xfade=wipeleft:duration=3:offset=81[v23];[v23][4:v]xfade=wipeleft:duration=3:offset=108[v34];[v34]format=pix_fmts=yuv420p[final];[0:a][1:a]acrossfade=d=3[a01];[a01][2:a]acrossfade=d=3[a12];[a12][3:a]acrossfade=d=3[a23];[a23][4:a]acrossfade=d=3[a34]" -map [final] -map [a34] -c:v hevc_nvenc -preset fast -r 30 output3.mp4 -y
