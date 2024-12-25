@@ -66,7 +66,7 @@ for i in range(len(segments)):
     if i == 0:
         continue
 
-    xfade_effects = ["fade","fadeblack","fadewhite","distance","wipeleft","wiperight","wipeup","wipedown","slideleft","slideright","slideup","slidedown","smoothleft","smoothright","smoothup","smoothdown","circlecrop","rectcrop","circleclose","circleopen","horzclose","horzopen","vertclose","vertopen","diagbl","diagbr","diagtl","diagtr","hlslice","hrslice","vuslice","vdslice","dissolve","pixelize","radial","hblur","wipetl","wipetr","wipebl","wipebr","zoomin","transition","for","xfade","fadegrays","squeezev","squeezeh","zoomin","hlwind","hrwind","vuwind","vdwind","coverleft","coverright","coverup","coverdown","revealleft","revealright","revealup","revealdown"]  # Exemplos de efeitos
+    xfade_effects = ["fade","fadeblack","fadewhite","distance","wipeleft","wiperight","wipeup","wipedown","slideleft","slideright","slideup","slidedown","smoothleft","smoothright","smoothup","smoothdown","circlecrop","rectcrop","circleclose","circleopen","horzclose","horzopen","vertclose","vertopen","diagbl","diagbr","diagtl","diagtr","hlslice","hrslice","vuslice","vdslice","dissolve","pixelize","radial","hblur","wipetl","wipetr","wipebl","wipebr","zoomin","fadegrays","squeezev","squeezeh","zoomin","hlwind","hrwind","vuwind","vdwind","coverleft","coverright","coverup","coverdown","revealleft","revealright","revealup","revealdown"]  # Exemplos de efeitos
     effect = random.choice(xfade_effects)
 
     # Video graph: chain the xfade operator together
