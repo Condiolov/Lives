@@ -2,7 +2,7 @@
 # Iniciando Script Automaticamente no Armbian Linux
 
 ### Vídeo passo a passo
-[Assista no YouTube](https://www.youtube.com/watch?v=yxwKsv4yIFM)
+[TODAS AS LIVES DO PROJETO]([https://www.youtube.com/watch?v=yxwKsv4yIFM](https://www.youtube.com/playlist?list=PLsTAWKKG5ZyxZYq_RLLeElvUsuYkG91WU))
 
 ---
 
