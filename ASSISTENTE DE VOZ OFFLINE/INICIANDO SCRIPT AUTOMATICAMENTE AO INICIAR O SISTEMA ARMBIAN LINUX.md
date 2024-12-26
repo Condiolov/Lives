@@ -95,7 +95,7 @@ Adicione o conteúdo abaixo ao arquivo:
 Description='AAAAAvCase - Assistente de Voz Caseiro'
 
 [Service]
-Type=simple
+Type=forking
 ExecStart=/home/thiago/aaa.sh
 Restart=no
 
