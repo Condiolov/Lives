@@ -1,0 +1,13 @@
+[Unit]
+Description=Controle de Temperatura da GPU NVIDIA
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /home/thiago/Documents/_Projetos/_NVIDIA/controle_de_temperatura_nvidia.sh
+TimeoutStartSec=0
+TimeoutStopSec=30
+# StandardOutput=syslog
+# StandardError=syslog
+
+[Install]
+WantedBy=default.target
